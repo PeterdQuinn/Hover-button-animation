@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+.container {
+  width: 334px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+  background: hsl(59, 80%, 41%);
+}
+
+.one {
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px #f5eeee7a;
+  overflow: hidden;
+  padding: 20px 50px 20px 70px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  color: rgb(15, 15, 15);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-position 0.7s, box-shadow 0.4s;
+  background-size: 110%;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0px 0px 4px 0px rgb(255 255 255 / 16%) inset,
+    3px 3px 10px 0px #000000;
+  background-image: linear-gradient(to bottom, #646fba59, rgb(57 52 52 / 51%)),
+    url(lebron.jpg);
+}
+.one:hover {
+  background-position: 0% 30%;
+  box-shadow: 0px 0px 0px 2px rgba(15, 15, 15, 0.16) inset,
+    0px 0px 30px 0px #222124;
+}
+
+.one:before,
+.one:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.one:before {
+  transition: all 1s;
+  font-size: 30px;
+  left: 25px;
+  top: 19px;
+}
+.one:after {
+  transition: right 0.4s, transform 0.2s;
+  font-size: 100px;
+  opacity: 0.3;
+  right: -120px;
+  top: -17px;
+}
+.one:hover:after {
+  right: -40px;
+  transition: right 0.4s, transform 30s 0.2s linear;
+  transform: scale(1);
+}
+.one:hover:before {
+  transform: scale(1.2);
+}
+
+.one b {
+  color: hsl(61, 62%, 60%);
+  font-weight: 700;
+}
